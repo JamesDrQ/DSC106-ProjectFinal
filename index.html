@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A UCSD DSC 106 project exploring regional disparities in climate warming projections using CMIP6.">
+  <title>Regional Disparities in Global Warming · DSC 106</title>
+  <link rel="stylesheet" href="./style.css">
+  <script defer src="https://cdn.jsdelivr.net/npm/d3@7/dist/d3.min.js"></script>
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header>
+    <p class="course">UC San Diego · DSC 106 Final Project</p>
+    <h1>Regional Disparities in Global Warming</h1>
+    <nav aria-label="Main navigation">
+      <a href="#explore">Visualizations</a>
+      <a href="#progress">Prototype Progress</a>
+      <a href="#methodology">Methodology</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section id="explore">
+      <h2>Visualizations</h2>
+      <h3>Which land regions warm the most?</h3>
+      <p>Compare the 15 regions with the largest projected warming. Choose a scenario and decade to see how the ranking changes. The dashed line marks the global average.</p>
+      <div id="regional-warming">
+        <p role="status">Loading regional warming data…</p>
+      </div>
+      <p class="note">Five-model mean near-surface air temperature warming relative to 1995–2014. Regional and global means use cosine-of-latitude area weights. Regions include IPCC Land and Land-Ocean categories. The chart shows projections, not observations, and does not show model uncertainty. (Data: CIMP6)</p>
+    </section>
+
+    <section id="progress">
+      <h2>Prototype Progress</h2>
+      <h3>What have you done so far?</h3>
+      <p>We have made steady progress on the project. We have decided on an outline for the project with the narrative we want to do as well. Following the structure described in class (and-but-therefore), we know that global warming has been a problem but different countries have disproportionately increasing temperatures, emissions, and impacts, therefore, policymakers should notice and understand why certain countries have higher increasing temperatures and what can be done to solve that. We have played around with some of the data we are planning to use and have been discussing how the visualizations should be presented to provide the most clarity for users, taking inspiration from the graphs seen in the Project 3 peer review and considering some of their weaknesses to avoid.</p>
+      <h3>What will be the most challenging of your project to design and why?</h3>
+      <p>One of the biggest challenges for our project is to provide a coherent and easy to understand graphic between the various topics we hope to cover. As we are looking at regional disparities between predicted temperatures, precipitation, and soil moisture, we need to ensure that all three are able to provide coherent information for the readers. Although we worked with the data in Project 3, we haven’t really used some of the other categories so utilizing them to the fullest will be a similar struggle as on Project 3 for the atmospheric temperature. Looking at some of the graphs we graded in Peer Review for project 3, I noticed that some graphs covered multiple topics but had inconsistent reference points or huge shifts in color coding which made the graphs somewhat jarring and confusing to look at. Outside of just regional topics on land, we were also looking to compare different regions of the oceans as climate change continues, which also need to be designed carefully not to create confusion when combined with the other graphs.</p>
+    </section>
+
+    <section id="findings">
+      <h2>Key Findings</h2>
+      <p>To be added after the visualizations and analysis are complete.</p>
+    </section>
+
+    <section id="methodology">
+      <h2>Methodology</h2>
+      <p>The temperature chart uses the supplied preprocessed CMIP6 warming files from five models, across four scenarios and the 2020s–2090s. We average the models, then calculate cosine-of-latitude weighted means for IPCC land regions and the globe, relative to 1995–2014. The top 15 regions are ranked for each selection using a fixed horizontal scale. This chart uses near-surface air temperature, not daily maximum temperature. Methods for the other planned variables are still being finalized.</p>
+    </section>
+  </main>
+
+  <footer>UC San Diego · DSC 106 · Initial Prototype</footer>
+</body>
+</html>

@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 36px 24px;
+  font-family: system-ui, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #303630;
+  background: #fff;
+}
+
+header {
+  border-top: 4px solid #527866;
+  padding-top: 20px;
+}
+
+.course, .note, footer {
+  color: #626b65;
+  font-size: 14px;
+}
+
+h1 {
+  margin: 8px 0 20px;
+  font-size: clamp(26px, 5vw, 34px);
+  line-height: 1.25;
+}
+
+h2 {
+  margin: 0 0 16px;
+  font-size: 23px;
+  color: #365b49;
+}
+
+h3 {
+  margin: 24px 0 10px;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+p {
+  margin: 0 0 16px;
+}
+
+a {
+  color: #365f4d;
+  text-underline-offset: 3px;
+}
+
+a:hover {
+  color: #172e23;
+}
+
+a:focus-visible {
+  outline: 2px solid #527866;
+  outline-offset: 4px;
+}
+
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px 22px;
+  padding-bottom: 22px;
+  font-size: 14px;
+}
+
+section {
+  padding: 28px 0;
+  border-top: 1px solid #dfe4df;
+  scroll-margin-top: 20px;
+}
+
+.viz-mount {
+  min-height: 130px;
+  padding: 24px;
+  border: 1px dashed #c4cec6;
+  background: #f6f8f5;
+  display: grid;
+  align-content: center;
+  text-align: center;
+  color: #626b65;
+  font-size: 14px;
+}
+
+.placeholder-title {
+  margin: 0 0 6px;
+}
+
+.placeholder-note {
+  margin: 0;
+  font-size: 13px;
+}
+
+footer {
+  padding-top: 20px;
+  border-top: 1px solid #dfe4df;
+}
+
+.skip-link {
+  position: absolute;
+  left: 24px;
+  top: -80px;
+  padding: 8px;
+  background: white;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+@media (max-width: 540px) {
+  body {
+    padding: 20px 18px;
+  }
+}
+
+.warming-controls {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 16px 28px;
+  margin: 20px 0;
+}
+
+.warming-controls label {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  font-size: 14px;
+}
+
+.warming-controls select {
+  padding: 6px;
+  font: inherit;
+}
+
+.warming-controls input {
+  width: 160px;
+  accent-color: #527866;
+}
+
+.warming-chart {
+  overflow-x: auto;
+}
+
+.warming-chart svg {
+  display: block;
+  font: 12px system-ui, sans-serif;
+}
+
+.warming-chart .tick text {
+  font-size: 11px;
+}
+
+.warming-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  margin: 16px 0;
+}
+
+.warming-table th, .warming-table td {
+  text-align: left;
+  padding: 6px;
+  border-bottom: 1px solid #dfe4df;
+}
+
+#regional-warming details {
+  margin: 16px 0;
+}
